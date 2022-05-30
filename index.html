@@ -65,7 +65,6 @@
 
 
 
-
   <!-- GRID / PAGE LAYOUT -->
 
   <div class="container">
@@ -75,94 +74,47 @@
       <div class="col-md-8">
         <br>
         <h1> Summary: Latitude vs. X </h1> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt optio provident tempora amet, eveniet et, eum illum, culpa laborum dicta recusandae magni architecto. Illo saepe facilis, unde. Debitis, atque, doloremque?</p>
-      </div>
+        <a target="_blank" href="Resources\assets\images\max_temp.png">
+        <img src="Resources\assets\images\max_temp.png" alt="Max Temperature Plot" class="img-thumbnail">
+        </a>        
+        <p>The purpose of this project was to analyse how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. <br>
+        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs the latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualisations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.        
+    </div>
       <div class="col-md-4">
         <br>
         <h1> Visualizations </h1> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum perferendis voluptates error ullam placeat repellendus. Repellendus error repellat veritatis recusandae voluptates earum rerum consectetur itaque, ipsam nihil. Alias, nemo.</p>
-      </div>
+        <br>
+
+        <div class="row">
+        <div class="col-md-4">
+          <a target="_blank" href="Resources\assets\images\max_temp.png">
+            <img src="Resources\assets\images\max_temp.png" alt="Max Temperature Plot" class="img-thumbnail">
+            </a>
+        </div>
+        <div class="col-md-4">
+          <a target="_blank" href="Resources\assets\images\wind_speed.png">
+            <img src="Resources\assets\images\wind_speed.png" alt="Max Temperature Plot" class="img-thumbnail">
+            </a>
+        </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <a target="_blank" href="Resources\assets\images\humidity.png">
+              <img src="Resources\assets\images\humidity.png" alt="Max Temperature Plot" class="img-thumbnail">
+              </a>
+          </div>
+          <div class="col-md-4">
+            <a target="_blank" href="Resources\assets\images\cloudiness.png">
+              <img src="Resources\assets\images\cloudiness.png" alt="Max Temperature Plot" class="img-thumbnail">
+              </a>
+          </div>
+        </div>
+
+    </div>
     </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 
-</html>
-
-<!-- SCREEN SIZING DRAFT -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Responsive Columns</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-  <div class="container"> -->
-    <!--Normally these medium columns go full wide on small screen sizes-->
-    <!-- <div class="row">
-      <div class="col-md-3">
-        <div class="box skyblue">col-md-3</div>
-      </div>
-      <div class="col-md-3">
-        <div class="box skyblue">col-md-3</div>
-      </div>
-      <div class="col-md-3">
-        <div class="box skyblue">col-md-3</div>
-      </div>
-      <div class="col-md-3">
-        <div class="box skyblue">col-md-3</div>
-      </div>
-    </div> -->
-
-    <!--These col-md-3 columns go half wide when on a small screen and full on extra small-->
-    <!-- <div class="row">
-      <div class="col-sm-6 col-md-3">
-        <div class="box purple">col-sm-6 col-md-3</div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="box purple">col-sm-6 col-md-3</div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="box purple">col-sm-6 col-md-3</div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="box purple">col-sm-6 col-md-3</div>
-      </div>
-    </div> -->
-<!--
-    These are full wide on a medium screen, half wide on a small screen, 1/4 wide on an extra small screen-->
-    <!-- <div class="row">
-      <div class="col-3 col-sm-6 col-md-12">
-        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
-      </div>
-      <div class="col-3 col-sm-6 col-md-12">
-        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
-      </div>
-      <div class="col-3 col-sm-6 col-md-12">
-        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
-      </div>
-      <div class="col-3 col-sm-6 col-md-12">
-        <div class="box red">col-xs-3 col-sm-6 col-md-12</div>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-
-</html> -->
-<!-- COMPLETE - SCREEN SIZING DRAFT -->
-
-    
-</body>
 </html>
