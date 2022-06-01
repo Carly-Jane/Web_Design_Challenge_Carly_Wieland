@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Web Design Challenge Humidity</title>
+
+  <!-- Bring in our bootstrap stylesheets -->  
+  
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+  <!-- Local css stylesheet  -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+
+<body>
+
+  <!-- NAV BAR -->
+  <!-- Includes expand settings for small vs large screens -->
+  <!-- Small screens display a drop down box to display navigation options -->
+  <!-- Large screens display all navigation options individually along the nav bar -->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Plots
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="maxtemp.html">Max Temperature</a></li>
+                <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+                <li><a class="dropdown-item" href="windspeed.html">Wind Speed</a></li>
+              </ul>
+            </li>
+              <a class="nav-link" href="comparisons.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <!-- COMPLETE - NAV BAR -->
+
+
+  <!-- GRID / PAGE LAYOUT -->
+
+  <div class="container">
+
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="col-md-8">
+        <br>
+        <h1> Humidity </h1> 
+          
+        <div class="img-fluid">
+          <img src="Resources\assets\images\humidity.png" 
+          class="col-md-8 float-md-end" 
+          alt="Humidity Plot">
+          </div>
+
+        <!-- <a target="_blank" href="Resources\assets\images\max_temp.png">
+          <img src="Resources\assets\images\max_temp.png" alt="Max Temperature Plot" >
+          </a> -->
+
+        <p> <br> The purpose of this project was to analyse how weather changes as you get closer to the equator. <br> <br>
+        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. <br> <br>
+        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs the latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. <br> <br>
+        This site provides the source data and visualisations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. <br> <br>        
+    </div>
+      <div class="col-md-4">
+        <br>
+        <h1> Other Observations </h1> 
+        <br>
+
+          <div class="row">
+          <div class="col-md-6">
+            <a target="_blank" href="Resources\assets\images\max_temp.png">
+              <img src="Resources\assets\images\max_temp.png" alt="Max Temperature Plot" class="img-thumbnail">
+              </a>
+          </div> <br>
+          <div class="col-md-6">
+            <a target="_blank" href="Resources\assets\images\wind_speed.png">
+              <img src="Resources\assets\images\wind_speed.png" alt="Max Temperature Plot" class="img-thumbnail">
+              </a>
+          </div>
+          </div> <br>
+
+          <div class="row">
+            <div class="col-md-6">
+              <a target="_blank" href="Resources\assets\images\humidity.png">
+                <img src="Resources\assets\images\humidity.png" alt="Max Temperature Plot" class="img-thumbnail-selected">
+                </a>
+            </div>
+            <div class="col-md-6">
+              <a target="_blank" href="Resources\assets\images\cloudiness.png">
+                <img src="Resources\assets\images\cloudiness.png" alt="Max Temperature Plot" class="img-thumbnail">
+                </a>
+            </div>
+          </div>
+
+    </div>
+    </div>
+    
+    <!-- COMPLETE - GRID / PAGE LAYOUT -->
+
+</body>
+
+</html>

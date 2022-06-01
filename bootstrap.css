@@ -634,6 +634,16 @@ progress {
   height: auto;
 }
 
+.img-thumbnail-selected {
+  padding: 0.25rem;
+  background-color: #9bc0e5;
+  border: 1px solid #9bc0e5;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  max-width: 100%;
+  height: auto;
+}
+
 .figure {
   display: inline-block;
 }
